@@ -50,8 +50,9 @@ def all_winter_holiday_supplies(holiday_hash)
   # holiday_hash[:winter][:new_years] << "Lights"
 
   holiday_hash[:winter].collect do |holiday, supplies|
-    supplies.to_s
+    supplies.flatten
   end
+
 end
 
 def all_supplies_in_holidays(holiday_hash)
